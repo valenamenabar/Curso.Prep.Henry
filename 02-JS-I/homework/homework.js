@@ -235,9 +235,9 @@ function esVocal(letra){
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
-  if ((letra = "a") || (letra = "e") || (letra = "i") || (letra = "o") || (letra = "u")){
+  if ((letra === "a") || (letra === "e") || (letra === "i") || (letra === "o") || (letra === "u")){
     return "Es vocal";
-  } else if (letra.length != 1){
+  } else {
     return "Dato incorrecto";
   }
 }
